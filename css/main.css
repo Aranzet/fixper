@@ -1,0 +1,1352 @@
+@font-face {
+    font-family: "TT Norms Bold";
+    src: url("/fonts/TTNorms-Bold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "TT Norms Medium";
+    src: url("/fonts/TTNorms-Medium.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "TT Norms Regular";
+    src: url("/fonts/TTNorms-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "TT Norms ExtraBold";
+    src: url("/fonts/TTNorms-ExtraBold.ttf") format("truetype")
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.work-discount__desc::before,
+.problem__hint::before,
+.team__slider .slick-dots li.slick-active button::before,
+.reviews__slider .slick-dots li.slick-active button::before,
+.rating__sum-point::before,
+.problem__btn-to-select::before,
+.work-discount__get-discount::after,
+.price__all-cost::after,
+.team__slider__next::after,
+.reviews__slider__next::after,
+.rating__num-point::after {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    display: block;
+    content: '';
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: "TT Norms Regular", sans-serif;
+    font-size: 16px;
+}
+
+.header,
+.problem {
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 10;
+    width: 1170px;
+    margin: auto;
+}
+
+/* 1-й Экран: меню, ремонт, скидка */
+
+.header {
+    position: relative;
+    color: #ffffff;
+    background: #A95094;
+}
+
+.header hr {
+    display: none;
+}
+
+.header .wrapper {
+    padding: 29px 0 245px;
+}
+
+/* Меню */
+
+.nav {
+    position: relative;
+    z-index: 10;
+}
+
+/* Меню и местоположение */
+
+.menu-geo {
+    position: absolute;
+    left: 186px;
+    top: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+}
+
+.menu-geo__menu {
+    display: inherit;
+}
+
+.menu-geo__menu {
+    list-style: none;
+    line-height: 20px;
+}
+
+.menu-geo__item {
+    text-decoration: none;
+    margin-right: 40px;
+    font-family: "TT Norms Medium", sans-serif;
+    color: #ffffff;
+}
+
+.menu-geo__item:last-child {
+    margin-right: 160px;
+}
+
+.menu-geo__geo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.menu-geo__img {
+    margin-right: 10px;
+}
+
+.menu-geo__place {
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+/* Логотип и кнопка "Позвонить" */
+
+.logo-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.logo {
+    display: inherit;
+    margin-top: -10px;
+    font-family: "TT Norms Bold", sans-serif;
+}
+
+.logo__name {
+    padding-left: 8.5px;
+    font-size: 29.24px;
+}
+
+.logo-btn__btn-call {
+    width: 162px;
+    height: 55px;
+    border-radius: 15px;
+    border: #FFC464 solid 2px;
+    background: none;
+    color: #FFC464;
+    font-family: "TT Norms Bold", sans-serif;
+}
+
+/* Ремонт */
+
+.header__desc {
+    position: relative;
+    z-index: 10;
+    width: 664px;
+    padding-top: 165px;
+    margin-left: calc(1170px - 664px);
+}
+
+.header__title {
+    font-size: 67px;
+    line-height: 95%;
+    font-family: "TT Norms ExtraBold", sans-serif;
+}
+
+.header__advantages {
+    padding: 25px 0 35px;
+    font-size: 20px;
+    line-height: 125%;
+}
+
+.header__advantages span {
+    font-family: "TT Norms Medium", sans-serif;
+    color: #FFC464;
+}
+
+.header__desc_btn-order-call {
+    width: 222px;
+    height: 55px;
+    border: none;
+    border-radius: 15px;
+    background: #000000;
+    color: #ffffff;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+/* Скидка */
+
+.work-discount {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    bottom: 25px;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1170px;
+    padding: 15px 31px;
+    background: #000000;
+    border-radius: 5px;
+}
+
+.work-discount__close {
+    width: 9px;
+    height: 9px;
+    border: none;
+    background: url(../img/close-discount.png);
+    background-size: cover;
+}
+
+.work-discount__desc {
+    position: relative;
+    padding-left: 19px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.work-discount__desc br {
+    display: none;
+}
+
+.work-discount__desc::before {
+    left: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: -2px;
+    background: #78C23E;
+    border-radius: 50%;
+}
+
+.work-discount__desc span {
+    color: #FFC464;
+}
+
+.work-discount__get-discount {
+    position: relative;
+    padding-right: 75px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: #FFC464;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+.work-discount__get-discount::after {
+    right: 0;
+    width: 50px;
+    height: 8px;
+    background: url(../img/arrow-discount.png) no-repeat;
+    background-size: contain;
+}
+
+/* Позиционирование картинок */
+
+.header__geometry {
+    position: absolute;
+    left: 88px;
+    bottom: 0;
+}
+
+.header__technics {
+    position: absolute;
+}
+
+.header__washer {
+    left: -108px;
+    bottom: 25px;
+}
+
+.header__refrigerator {
+    bottom: 0;
+    left: -150px;
+}
+
+.header__tv {
+    left: -150px;
+    bottom: 194px;
+}
+
+.header__laptop {
+    left: -150px;
+    bottom: 69px;
+}
+
+.header__pc {
+    bottom: 45px;
+    left: -140px;
+}
+
+.header__repairman {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* 2-й Экран: Наши преимущества */
+
+.advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 116px 0 87px;
+}
+
+.advantages__item {
+    width: 207px;
+    margin-right: 93px;
+}
+
+.advantages__item:last-child {
+    margin-right: 0;
+}
+
+.advantages__desc {
+    padding-top: 23px;
+    font-size: 20px;
+    line-height: 130%;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+/* 3-й Экран: Какая у вас проблема */
+
+.problem {
+    background-color: #FAFAFA;
+}
+
+.problem .wrapper {
+    padding: 115px 0 155px;
+    padding-left: 64px;
+}
+
+.problem__small-title {
+    padding-bottom: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "TT Norms Bold", sans-serif;
+    color: #A95094;
+}
+
+.section__title {
+    font-size: 45px;
+    line-height: 40px;
+    font-family: "TT Norms Bold", sans-serif;
+}
+
+/* Выбор проблемы */
+
+.problem .wrapper {
+    min-height: 825px;
+}
+
+.problem__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 625px;
+    padding: 50px 0 30px;
+}
+
+.problem__select {
+    display: none;
+}
+
+.problem__btn {
+    padding: 15px 29px;
+    margin: 0 15px 20px 0;
+    line-height: 24px;
+    border: 1px solid #96317D;
+    border-radius: 15px;
+    background: none;
+    font-size: 16px;
+    color: #96317D;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+.problem__btn:hover {
+    background: #96317D;
+    color: #ffffff;
+}
+
+.problem__hint {
+    position: relative;
+    padding-left: 50px;
+    line-height: 24px;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+.problem__hint::before {
+    left: 0;
+    -webkit-transform: translate(0, -45%);
+        -ms-transform: translate(0, -45%);
+            transform: translate(0, -45%);
+    width: 34px;
+    height: 34px;
+    background: url(../img/problem-hint.png);
+}
+
+/* Решение проблемы */
+
+.problem-decision {
+    display: none;
+}
+
+.problem__btn-to-select {
+    position: relative;
+    padding: 0 0 0 75px;
+    margin-bottom: 15px;
+    border: none;
+    background: none;
+}
+
+.problem__btn-to-select::before {
+    left: 0;
+    top: 2px;
+    bottom: 50%;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    width: 50px;
+    height: 11px;
+    background: url(../img/arrow-slick.png);
+    background-size: cover;
+}
+
+.problem-decision__reason-list {
+    padding: 50px 0;
+    width: 625px;
+}
+
+.problem-decision__reason {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 35px;
+}
+
+.problem-decision__reason:last-child {
+    padding-bottom: 0;
+}
+
+.reason__desc {
+    padding-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.reason__title {
+    padding-bottom: 7px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.reason__price {
+    color: #993280;
+}
+
+.reason__price br {
+    display: none;
+}
+
+.reason__price-work {
+    padding-right: 7px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.reason__price-work::after {
+    padding-left: 4px;
+    content: '₽';
+}
+
+.problem-decision__call-master {
+    padding: 19px 50px;
+    border: none;
+    border-radius: 15px;
+    background: #000000;
+    font-family: "TT Norms Medium", sans-serif;
+    color: #ffffff;
+}
+
+/* Прогресс бар */
+
+.reason__progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+    position: relative;
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+
+.reason__progress-bar.gt-50 {
+    background-color: #FFC464;
+}
+
+.progress-bar {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    clip: rect(0, 100px, 100px, 50px);
+}
+  
+.progress-bar .progress-bar__fill {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    clip: rect(0, 50px, 100px, 0);
+    background: #FFC464;
+    -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+            transform: rotate(60deg);
+}
+  
+.gt-50 .progress-bar {
+    clip: rect(0, 50px, 100px, 0);
+}
+  
+.gt-50 .progress-bar .progress-bar__fill {
+    clip: rect(0, 100px, 100px, 50px);
+    background: #E5E5E5;
+}
+  
+.progress-bar__percents {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: calc(50% - 43.4782608696px);
+    top: calc(50% - 43.4782608696px);
+    width: 86.9565217392px;
+    height: 86.9565217392px;
+    background: #FAFAFA;
+    text-align: center;
+    display: table;
+}
+  
+.progress-bar__percents-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+  
+.progress-bar__percents-wrapper span {
+    display: block;
+    font-size: 26px;
+    color: #2F2F2F;
+    font-family: "TT Norms Bold", sans-serif;
+}
+
+  .progress-bar__percents-wrapper span::after {
+      content: '%';
+      font-size: 20px;
+      font-family: "TT Norms Medium", sans-serif;
+}
+
+/* Фоновые картинки, позиционирование */
+
+.problem__geometry {
+    position: absolute;
+    top: 0;
+    right: -150px;
+}
+
+.problem__technics {
+    position: absolute;
+    top: 55px;
+    right: -85px;
+}
+
+.problem__washer {
+    top: 55px;
+    right: -85px;
+}
+
+.problem__refrigerator {
+    top: 0;
+    right: 43px;
+}
+
+.problem__tv {
+    top: 185px;
+    right: -150px;
+}
+
+.problem__laptop {
+    top: 235px;
+    right: -150px;
+}
+
+.problem__pc {
+    top: 80px;
+    right: -150px;
+}
+
+.problem__square-star {
+    position: absolute;
+    top: 580px;
+    right: 380px;
+}
+
+.square-star__refrigerator {
+    top: 660px;
+    right: 385px;
+}
+
+.square-star__tv {
+    top: 195px;
+    right: 400px;
+}
+
+.square-star__laptop {
+    top: 558px;
+    right: 400px;
+}
+
+.square-star__pc {
+    top: 590px;
+    right: 350px;
+}
+
+.problem__display-none {
+    display: none;
+}
+
+.problem__display-block {
+    display: block;
+}
+
+/* 4-й Экран: Стоимость */
+
+.price {
+    padding: 100px 0;
+}
+
+.price__title {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.table {
+    width: 970px;
+    margin: auto;
+}
+
+.table-mobile {
+    display: none;
+}
+
+.table tr td {
+    padding: 25px 0;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.table tr td {
+    text-align: right;
+}
+
+.table tr td:first-child {
+    line-height: 24px;
+    text-align: left;
+}
+
+.table tr td:nth-child(2) {
+    width: 200px;
+}
+
+.table tr td:last-child {
+    width: 180px;
+}
+
+.table__cost,
+.price__all-cost {
+    line-height: 24px;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+.table__cost_free {
+    font-size: 18px;
+    color: #96317D;
+}
+
+.table__cost span {
+    font-size: 18px;
+}
+
+.price__all-cost {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 35px;
+    margin: 50px auto 0;
+    color: #96317D;
+    background: none;
+    border: none;
+}
+
+.price__all-cost::after {
+    right: 0;
+    -webkit-transform: translate(0, -45%);
+        -ms-transform: translate(0, -45%);
+            transform: translate(0, -45%);
+    width: 25px;
+    height: 25px;  
+    background: url(../img/refresh.png);
+    background-size: contain;
+}
+
+/* 5-й Экран: Команда */
+
+.team {
+    padding: 100px 0 160px;
+    background-color: #FAFAFA;
+}
+
+.team__desc {
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    font-family: "TT Norms Medium", sans-serif;
+    color: #96317D;
+}
+
+.team__title {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.team__slider {
+    position: relative;
+}
+
+.team-slider__item {
+    width: 370px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.team-slider__img {
+    height: 370px;
+    background: url(../img/slider-bg1.png);
+}
+
+.team-slider__item:nth-child(2n) .team__slider__item__img {
+    background: url(../img/slider-bg2.png);
+}
+
+.team-slider__repairman-desc {
+    padding: 50px 45px;
+}
+
+.team-slider__repairman-name {
+    font-size: 24px;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+.team-slider__repairman-specialty {
+    padding: 8px 0 25px;
+}
+
+.team-slider__repairman-progress {
+    list-style-image: url(../img/tick.png);
+    color: #96317D;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+.team-slider__repairman-progress li {
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+.team-slider__repairman-progress li:last-child {
+    padding-bottom: 0;
+}
+
+.team__slider .slick-slide,
+.reviews__slider .slick-slide {
+    margin: 0 15px;
+}
+
+.team__slider .slick-list,
+.reviews__slider .slick-list {
+    margin: 0 -15px;
+}
+
+.team__slider .slick-dots,
+.reviews__slider .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    -webkit-transform: translate(0, 100%);
+        -ms-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+}
+
+.team__slider .slick-dots li::marker,
+.reviews__slider .slick-dots li::marker {
+    display: none;
+    content: '';
+}
+
+.team__slider .slick-dots li button,
+.reviews__slider .slick-dots li button {
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    content: '';
+    border: none;
+    border-radius: 50%;
+    background: #96317D;
+    font-size: 0;
+}
+
+.team__slider .slick-dots li.slick-active button,
+.reviews__slider .slick-dots li.slick-active button {
+    position: relative;
+    padding: 8px;
+    border: 2px solid #96317D;
+    background: none;
+}
+
+.team__slider .slick-dots li.slick-active button::before,
+.reviews__slider .slick-dots li.slick-active button::before {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: #96317D;
+    border-radius: 50%;
+}
+
+.team__slider__prev,
+.reviews__slider__prev {
+    cursor: pointer;
+    position: absolute;
+    right: 140px;
+    bottom: -40px;
+    -webkit-transform: translate(0, 100%);
+        -ms-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+.team__slider__next,
+.reviews__slider__next {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    padding-right: 50px;
+    -webkit-transform: translate(0, 100%);
+        -ms-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+    font-family: "TT Norms Medium", sans-serif;
+    color: #96317D;
+}
+
+.team__slider__next::after,
+.reviews__slider__next::after {
+    right: 0;
+    width: 35px;
+    height: 8px;
+    background: url(../img/arrow-slick.png);
+}
+
+/* 5-й Экран: Отзывы */
+
+.reviews {
+    padding: 100px 0 160px;
+}
+
+.reviews__title {
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.reviews__slider {
+    position: relative;
+}
+
+.reviews-slider__item {
+    width: 570px;
+    padding: 75px 50px;
+    background-color: #FAFAFA;
+}
+
+.reviews-slider__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.reviews-slider__header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.reviews-slider__name-date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 30px;
+}
+
+.reviews-slider__name {
+    padding-bottom: 8px;
+    font-size: 24px;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+.reviews-slider__text {
+    padding-top: 35px;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.reviews__slider .slick-slide {
+    min-height: 420px; 
+}
+ 
+/* 6-й Экран: Оценки */
+
+.rating {
+    padding: 50px 0;
+    background-color: #FAFAFA;
+}
+
+.rating .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.rating__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 370px;
+    height: 135px;
+    padding: 35px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.rating__point {
+    padding-right: 28px;
+    border-right: 1px solid #E3E3E3;
+}
+
+.rating__sum-point {
+    position: relative;
+    padding-left: 35px;
+    font-size: 25px;
+    line-height: 40px;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+.rating__sum-point::before {
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: url(../img/star.png);
+}
+
+.rating__sum-point span {
+    font-size: 35px;
+    font-family: "TT Norms Bold", sans-serif;
+}
+
+.rating__num-point {
+    line-height: 20px;
+}
+
+.rating__item img {
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+.question-answer {
+    padding: 100px 0;
+}
+
+/* 7-й Экран: Вопросы-ответы */
+
+.question-answer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.question-answer__title-desc {
+    width: 300px;
+}
+
+.question-answer__title {
+    font-size: 40px;
+}
+
+.question-answer__desc {
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #212121;
+}
+
+.question-answer__desc a {
+    font-family: "TT Norms Medium", sans-serif;
+    color: #A95094;
+}
+
+.question-answer__list {
+    width: 720px;
+}
+
+.question-answer__item {
+    position: relative;
+    padding: 25px 35px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+}
+
+.question-answer__item:last-child {
+    margin-bottom: 0;
+}
+
+.question-answer__question {
+    font-size: 20px;
+    font-family: "TT Norms Medium", sans-serif;
+    color: #212121;
+}
+
+.question-answer__answer {
+    display: none;
+    width: 585px;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.question-answer__answer_visible {
+    display: block;
+}
+
+.question-answer__show-answer {
+    position: absolute;
+    right: 35px;
+    top: 18px;
+    width: 38px;
+    height: 38px;
+    background-color: #96317D;
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+/* 8-й Экран: Вопросы-ответы */
+
+.call-master {
+    padding: 100px 0;
+    background: url(../img/call-master-bg.png);
+    background-size: cover;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+.call-master .wrapper {
+    width: 1340px;
+}
+
+.call-master__desc-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 85px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.call-master__title {
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.call-master__smal-desc {
+    font-size: 20px;
+    font-family: "TT Norms Medium", sans-serif;
+    color: #171717;
+}
+
+.call-master__smal-desc span {
+    font-family: "TT Norms Bold", sans-serif;
+    color: #A95094;
+}
+
+.call-master__form input,
+.call-master__form button {
+    font-family: "TT Norms Medium", sans-serif;
+    font-size: 16px;
+    border: none;
+}
+
+.call-master__form input {
+    width: 326px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.call-master__form button {
+    padding: 25px 95px;
+    margin-left: 30px;
+    border-radius: 15px;
+    background-color: #A95094;
+    color: #ffffff;
+}
+
+/* 9-й Экран: Контакты */
+
+.contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 100px 0;
+}
+
+.contacts__map {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    border-radius: 15px;
+}
+
+.contacts__info {
+    width: 350px;
+}
+
+.contacts__title {
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.contacts__address {
+    padding-bottom: 35px;
+    line-height: 24px;
+}
+
+.contacts__address .address {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: "TT Norms Bold", sans-serif;
+}
+
+.contacts__email {
+    display: block;
+    margin-bottom: 35px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "TT Norms Medium", sans-serif;
+    color: #000000;
+}
+
+.contacts__btn-call {
+    padding: 18px 40px;
+    color: #993280;
+    border: 2px solid #993280;
+    border-radius: 15px;
+    background: none;
+    font-family: "TT Norms Bold", sans-serif;
+}
+
+/* 10-й Экран: Футер */
+
+.footer__logo-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.footer__logo {
+    display: inherit;
+    margin: 0;
+}
+
+.footer__nav {
+    margin: 35px 0 50px;
+}
+
+.footer__nav a {
+    text-decoration: none;
+    margin-right: 40px;
+    line-height: 20px;
+    font-family: "TT Norms Bold", sans-serif;
+    color: #000000;
+}
+
+.footer__nav a:last-child {
+    margin-right: 0;
+}
+
+.payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 1340px;
+    padding: 35px 0;
+    margin: auto;
+    background-color: #FAFAFA;
+    font-family: "TT Norms Medium", sans-serif;
+}
+
+.payment__way {
+    padding-right: 25px;
+    line-height: 20px;
+}
+
+.payment a,
+.payment p:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    padding: 0 25px;
+    margin-right: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.payment p:last-child {
+    margin-right: 0;
+}
+
+.payment a img {
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+.footer__company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 50px 0 30px;
+}

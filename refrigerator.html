@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=1470, initial-scale=1.0">
+    <title>Fixper</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-adaptive.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- 1-й Экран: Хедер -->
+    <header class="header">
+        <hr>
+        <div class="wrapper">
+            <!-- Меню -->
+            <nav class="nav">
+                <!-- Меню и местоположение -->
+                <div class="menu-geo">
+                    <ul class="menu-geo__menu">
+                        <a href="#" class="menu-geo__item">Диагностика</a>
+                        <a href="#" class="menu-geo__item">Стоимость</a>
+                        <a href="#" class="menu-geo__item">Мастера</a>
+                        <a href="#" class="menu-geo__item">Отзывы</a>
+                        <a href="#" class="menu-geo__item">Вопросы</a>
+                    </ul>
+                    <div class="menu-geo__geo">
+                        <img class="menu-geo__img" src="img/geo.png" alt="Местоположение">
+                        <p class="menu-geo__place">Москва</p>
+                    </div>
+                </div>
+                <!-- Логотип и кнопка "Позвонить" -->
+                <div class="logo-btn">
+                    <div class="logo-btn__logo logo">
+                        <img class="logo-btn__img" src="img/logo.png" alt="F">
+                        <span class="logo__name">Fixper</span>
+                    </div>
+                    <button class="logo-btn__btn-call">Позвонить</button>
+                </div>
+            </nav>
+            <!-- Ремонт -->
+            <div class="header__desc">
+                <h1 class="header__title">Ремонт холодильников на дому c годовой гарантией</h1>
+                <p class="header__advantages"><span>Отремонтируем на дому</span> или бесплатно завезем <br>
+                    и доставим обратно из сервисного центра</p>
+                <button class="header__desc_btn-order-call">Заказать звонок</button>
+            </div>
+            <!-- Фоновые картинки -->
+            <img src="img/header-geometry.png" alt="Геометрия" class="header__geometry">
+            <img src="img/header-refrigerator.png" alt="Холодильник" class="header__refrigerator header__technics">
+            <img src="img/repairman1.png" alt="Ремонтник" class="header__repairman">
+        </div>
+        
+            <!-- Скидка -->
+            <div class="work-discount">
+                <button class="work-discount__close"></button>
+                <p class="work-discount__desc"><span>Мы открыты и принимаем заказы</span> <span>до 21:00</span>, позвоните сейчас <br> и мы сделаем скидку 15%</p>
+                <button class="work-discount__get-discount">Получить скидку</button>
+            </div>
+    </header>
+    <!-- Основной контент -->
+
+    <main>
+
+        <!-- 2-й Экран: Наши преимущества -->
+        <section class="advantages wrapper">
+            <div class="advantages__item">
+                <img class="advantages_img" src="img/parts.png" alt="Фирменные запчасти">
+                <p class="advantages__desc">Фирменные запчасти у мастеров в наличии</p>
+            </div>
+            <div class="advantages__item">
+                <img class="advantages__img" src="img/hour.png" alt="Быстро">
+                <p class="advantages__desc">Большинство ремонтов делаем за час на дому</p>
+            </div>
+            <div class="advantages__item">
+                <img class="advantages__img" src="img/tool.png" alt="Инструменты">
+                <p class="advantages__desc">Профессиональный инструмент под любую задачу</p>
+            </div>
+            <div class="advantages__item">
+                <img class="advantages__img" src="img/master.png" alt="Мастера">
+                <p class="advantages__desc">Квалифицированные и опытные мастера</p>
+            </div>
+        </section>
+
+        <!-- 3-й Экран: Какая у вас проблема -->
+        <section class="problem">
+            <div class="wrapper">
+                <!-- Выбор проблемы -->
+                <div class="problem-select">
+                    <h3 class="problem__small-title">Онлайн-диагностика</h3>
+                    <h2 class="problem__title section__title">Какая у вас проблема?</h2>
+                    <div class="problem__list">
+                        <button class="problem__btn">Не включается</button>
+                        <button class="problem__btn">Не выключается</button>
+                        <button class="problem__btn">Не нагревает воду</button>
+                        <button class="problem__btn">Все работет, но мне скучно и я хочу пообщаться с мастером</button>
+                        <button class="problem__btn">Не крутится барабан</button>
+                        <button class="problem__btn">Не работает кнопка включения</button>
+                        <button class="problem__btn">Не выключается</button>
+                        <button class="problem__btn">Иная проблема</button>
+                        <button class="problem__btn">Не крутится барабан</button>
+                        <button class="problem__btn">Не крутится барабан</button>
+                        <button class="problem__btn">Не работает кнопка включения</button>
+                    </div>
+                    <form action="#" class="problem__select">
+                        <select>
+                            <option selected="selected">Выберите проблему</option>
+                            <option value="Не выключается">Не выключается</option>
+                            <option value="Не включается">Не включается</option>
+                            <option value="Все работет, но мне скучно и я хочу пообщаться с мастером">Все работет, но мне скучно и я хочу пообщаться с мастером</option>
+                            <option value="Не крутится барабан">Не крутится барабан</option>
+                        </select>
+                    </form>
+                    <p class="problem__hint">Выберите проблему и узнайте её решение</p>
+                </div>
+                <!-- Решение проблемы -->
+                <div class="problem-decision">
+                    <button class="problem__small-title problem__btn-to-select">Выбрать другую проблему</button>
+                    <h2 class="problem__title section__title">Вероятней всего:</h2>
+                    <div class="problem-decision__reason-list">
+                        <div class="problem-decision__reason">
+                            <!-- Прогресс бар -->
+                            <div class="reason__progress-bar reason1" data-percent="17">
+                                <div class="progress-bar">
+                                  <div class="progress-bar__fill"></div>
+                                </div>
+                                <div class="progress-bar__percents">
+                                  <div class="progress-bar__percents-wrapper">
+                                    <span></span>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="reason__desc">
+                                <h3 class="reason__title">Замена фильтра</h3>
+                                <p class="reason__price"><span class="reason__price-work">1 200</span><br>+ запчасть от <span class="reason__price-part">3500</span> ₽</p>
+                            </div>
+                        </div>
+                        <div class="problem-decision__reason">
+                            <!-- Прогресс бар -->
+                            <div class="reason__progress-bar reason2" data-percent="51">
+                                <div class="progress-bar">
+                                  <div class="progress-bar__fill"></div>
+                                </div>
+                                <div class="progress-bar__percents">
+                                  <div class="progress-bar__percents-wrapper">
+                                    <span></span>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="reason__desc">
+                                <h3 class="reason__title">Замена фильтра</h3>
+                                <p class="reason__price"><span class="reason__price-work">1 200</span><br>+ запчасть от <span class="reason__price-part">3500</span> ₽</p>
+                            </div>
+                        </div>
+                        <div class="problem-decision__reason">
+                            <!-- Прогресс бар -->
+                            <div class="reason__progress-bar reason3" data-percent="32">
+                                <div class="progress-bar">
+                                  <div class="progress-bar__fill"></div>
+                                </div>
+                                <div class="progress-bar__percents">
+                                  <div class="progress-bar__percents-wrapper">
+                                    <span></span>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="reason__desc">
+                                <h3 class="reason__title">Замена фильтра</h3>
+                                <p class="reason__price"><span class="reason__price-work">1 200</span><br>+ запчасть от <span class="reason__price-part">3500</span> ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="problem-decision__call-master">Вызвать мастера с выездом от 45 минут</button>
+                </div>
+                <!-- Фоновые картинки -->
+                <img src="img/problem-bg.png" alt="Геометрия" class="problem__geometry">
+                <img src="img/problem-refrigerator.png" alt="Холодильник" class="problem__refrigerator problem__technics">
+                <img src="img/square-star.png" alt="Геометрия" class="problem__square-star square-star__refrigerator">
+            </div>
+        </section>
+
+        <!-- 4-й Экран: Стоимость -->
+        <section class="price wrapper">
+            <h2 class="price__title section__title">Стоимость работ</h2>
+            <table class="table">
+                <tr>
+                    <td>Услуга</td>
+                    <td>Стоимость запчасти</td>
+                    <td>Стоимость работ</td>
+                </tr>
+                <tr>
+                    <td>Выезд мастера</td>
+                    <td class="table__cost"></td>
+                    <td class="table__cost table__cost_free">Бесплатно</td>
+                </tr>
+                <tr>
+                    <td>Диагностика стиральной машины</td>
+                    <td class="table__cost"></td>
+                    <td class="table__cost table__cost_free">Бесплатно</td>
+                </tr>
+                <tr>
+                    <td>Замена блока питания</td>
+                    <td class="table__cost">от <span>750</span>₽</td>
+                    <td class="table__cost"><span>900</span>₽</td>
+                </tr>
+                <tr>
+                    <td>Замена помпы</td>
+                    <td class="table__cost">от <span>8880</span>₽</td>
+                    <td class="table__cost"><span>1900</span>₽</td>
+                </tr>
+                <tr>
+                    <td>Замена подшипников</td>
+                    <td class="table__cost">от <span>1450</span>₽</td>
+                    <td class="table__cost"><span>750</span>₽</td>
+                </tr>
+            </table>
+            <table class="table-mobile">
+                <tbody>
+                    <tr>
+                        <th class="table__row-title">Выезд мастера</th>
+                    </tr>
+                    <tr>
+                        <th>Стоимость работ</th>
+                        <th class="table__cost table__cost_free">Бесплатно</th>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th class="table__row-title" colspan="2">Диагностика стиральной машины</th>
+                    </tr>
+                    <tr>
+                        <th>Стоимость работ</th>
+                        <th class="table__cost table__cost_free">Бесплатно</th>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th class="table__row-title" colspan="2">Замена блока питания</th>
+                    </tr>
+                    <tr>
+                        <th>Стоимость работ</th>
+                        <th class="table__cost"><span>900</span>₽</th>
+                    </tr>
+                    <tr>
+                        <th>Стоимость запчасти</th>
+                        <th class="table__cost">от <span>750</span>₽</th>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th class="table__row-title" colspan="2">Замена помпы</th>
+                    </tr>
+                    <tr>
+                        <th>Стоимость работ</th>
+                        <th class="table__cost"><span>1900</span>₽</th>
+                    </tr>
+                    <tr>
+                        <th>Стоимость запчасти</th>
+                        <th class="table__cost">от <span>8880</span>₽</th>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th class="table__row-title" colspan="2">Замена помпы</th>
+                    </tr>
+                    <tr>
+                        <th>Стоимость работ</th>
+                        <th class="table__cost"><span>750</span>₽</th>
+                    </tr>
+                    <tr>
+                        <th>Стоимость запчасти</th>
+                        <th class="table__cost">от <span>1450</span>₽</th>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="price__all-cost">Показать все цены</button>
+        </section>
+
+        <!-- 5-й Экран: Команда -->
+        <section class="team">
+            <div class="wrapper">
+                <p class="team__desc">В нашем штате 37 сотрудников</p>
+                <h2 class="team__title section__title">Мы большая команда профессионалов</h2>
+                <div class="team__slider">
+                    <div class="team-slider__item">
+                        <div class="team-slider__img">
+                            <img src="img/repairman2.png" alt="Александр Федулов">
+                        </div>
+                        <div class="team-slider__repairman-desc">
+                            <h3 class="team-slider__repairman-name">Александр Федулов</h3>
+                            <p class="team-slider__repairman-specialty">Ремонтник</p>
+                            <ul class="team-slider__repairman-progress">
+                                <li>398 ремонтных работ</li>
+                                <li>3 года в Fixper</li>
+                                <li>Рейтинг Fixper 4,5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-slider__item">
+                        <div class="team-slider__img">
+                            <img src="img/repairman3.png" alt="Александр Федулов">
+                        </div>
+                        <div class="team-slider__repairman-desc">
+                            <h3 class="team-slider__repairman-name">Александр Федулов</h3>
+                            <p class="team-slider__repairman-specialty">Ремонтник</p>
+                            <ul class="team-slider__repairman-progress">
+                                <li>398 ремонтных работ</li>
+                                <li>3 года в Fixper</li>
+                                <li>Рейтинг Fixper 4,5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-slider__item">
+                        <div class="team-slider__img">
+                            <img src="img/repairman4.png" alt="Александр Федулов">
+                        </div>
+                        <div class="team-slider__repairman-desc">
+                            <h3 class="team-slider__repairman-name">Александр Федулов</h3>
+                            <p class="team-slider__repairman-specialty">Ремонтник</p>
+                            <ul class="team-slider__repairman-progress">
+                                <li>398 ремонтных работ</li>
+                                <li>3 года в Fixper</li>
+                                <li>Рейтинг Fixper 4,5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team-slider__item">
+                        <div class="team-slider__img">
+                            <img src="img/repairman2.png" alt="Александр Федулов">
+                        </div>
+                        <div class="team-slider__repairman-desc">
+                            <h3 class="team-slider__repairman-name">Александр Федулов</h3>
+                            <p class="team-slider__repairman-specialty">Ремонтник</p>
+                            <ul class="team-slider__repairman-progress">
+                                <li>398 ремонтных работ</li>
+                                <li>3 года в Fixper</li>
+                                <li>Рейтинг Fixper 4,5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5-й Экран: Отзывы -->
+        <section class="reviews wrapper">
+            <h2 class="reviews__title section__title">Нас высоко оценивают</h2>
+            <div class="reviews__slider">
+                <div class="reviews-slider__item">
+                    <div class="reviews-slider__header">
+                        <img src="img/review.jpg" alt="Фото">
+                        <div class="reviews-slider__name-date">
+                            <h3 class="reviews-slider__name">Владимир Завертайлов</h3>
+                            <p class="reviews-slider__date">15 марта 2021</p>
+                        </div>
+                    </div>
+                    <p class="reviews-slider__text">Знаю AXIS, как опытных экспертов в области создания визуализаций любой сложности. Умеют четко, грамотно и по делу формулировать мысли. Исследовать вопросы. Капают — глубоко. В 3D визуализации стремятся не заработать на клиенте, а решить проблемы и предподнести проект в выгодном свете!</p>
+                </div>
+                <div class="reviews-slider__item">
+                    <div class="reviews-slider__header">
+                        <img src="img/review.jpg" alt="Фото">
+                        <div class="reviews-slider__name-date">
+                            <h3 class="reviews-slider__name">Владимир Завертайлов</h3>
+                            <p class="reviews-slider__date">15 марта 2021</p>
+                        </div>
+                    </div>
+                    <p class="reviews-slider__text">Хочу выразить свою и признательность в решении ремонта стиральной машины Самсунг A600FN, смогли сделать раньше срока и качественно, спасибо большое. Вы лучшие! Всегда буду обращаться к Вам, ваш клиент.</p>
+                </div>
+                <div class="reviews-slider__item">
+                    <div class="reviews-slider__header">
+                        <img src="img/review.jpg" alt="Фото">
+                        <div class="reviews-slider__name-date">
+                            <h3 class="reviews-slider__name">Владимир Завертайлов</h3>
+                            <p class="reviews-slider__date">15 марта 2021</p>
+                        </div>
+                    </div>
+                    <p class="reviews-slider__text">Хочу выразить свою и признательность в решении ремонта стиральной машины Самсунг A600FN, смогли сделать раньше срока и качественно, спасибо большое. Вы лучшие! Всегда буду обращаться к Вам, ваш клиент.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6-й Экран: Оценки -->
+        <section class="rating">
+            <div class="wrapper">
+                <div class="rating__item">
+                    <div class="rating__point">
+                        <p class="rating__sum-point"><span>4,5</span> / 5.0</p>
+                        <p class="rating__num-point">100+ оценок</p>
+                    </div>
+                    <img src="img/google.png" alt="Google">
+                </div>
+                <div class="rating__item">
+                    <div class="rating__point">
+                        <p class="rating__sum-point"><span>4,8</span> / 5.0</p>
+                        <p class="rating__num-point">250+ оценок</p>
+                    </div>
+                    <img src="img/yandex.png" alt="Google">
+                </div>
+                <div class="rating__item">
+                    <div class="rating__point">
+                        <p class="rating__sum-point"><span>4,3</span> / 5.0</p>
+                        <p class="rating__num-point">10000+ оценок</p>
+                    </div>
+                    <img src="img/fixcellent.png" alt="Google">
+                </div>
+            </div>
+        </section>
+
+        <!-- 7-й Экран: Вопросы-ответы -->
+        <section class="question-answer wrapper">
+            <div class="question-answer__title-desc">
+                <h2 class="question-answer__title section__title">Часто задаваемые вопросы</h2>
+                <p class="question-answer__desc">Не нашли ответ на свой вопрос? <a href="#">Оставьте заявку</a> и наш специалист свяжется  и ответит на ваш вопрос</p>
+            </div>
+            <div class="question-answer__list">
+                <div class="question-answer__item question1">
+                    <h4 class="question-answer__question">Где почитать отзывы о вас?</h4>
+                    <p class="question-answer__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam dolorum consequuntur. Odit vero voluptatibus labore facere, aliquam nostrum placeat nobis deserunt recusandae explicabo odio molestiae expedita fugiat tempore ea.</p>
+                    <button class="question-answer__show-answer">+</button>
+                </div>
+                <div class="question-answer__item question2">
+                    <h4 class="question-answer__question">Сколько времени длится ремонт?</h4>
+                    <p class="question-answer__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam dolorum consequuntur. Odit vero voluptatibus labore facere, aliquam nostrum placeat nobis deserunt recusandae explicabo odio molestiae expedita fugiat tempore ea.</p>
+                    <button class="question-answer__show-answer">+</button>
+                </div>
+                <div class="question-answer__item question3">
+                    <h4 class="question-answer__question">Какие марки стиральных машин вы ремонтируете?</h4>
+                    <p class="question-answer__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam dolorum consequuntur. Odit vero voluptatibus labore facere, aliquam nostrum placeat nobis deserunt recusandae explicabo odio molestiae expedita fugiat tempore ea.</p>
+                    <button class="question-answer__show-answer">+</button>
+                </div>
+                <div class="question-answer__item question4">
+                    <h4 class="question-answer__question">Я живу в московской области, сможете приехать?</h4>
+                    <p class="question-answer__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam dolorum consequuntur. Odit vero voluptatibus labore facere, aliquam nostrum placeat nobis deserunt recusandae explicabo odio molestiae expedita fugiat tempore ea.</p>
+                    <button class="question-answer__show-answer">+</button>
+                </div>
+                <div class="question-answer__item question5">
+                    <h4 class="question-answer__question">Как производится контроль качества?</h4>
+                    <p class="question-answer__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam dolorum consequuntur. Odit vero voluptatibus labore facere, aliquam nostrum placeat nobis deserunt recusandae explicabo odio molestiae expedita fugiat tempore ea.</p>
+                    <button class="question-answer__show-answer">+</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8-й Экран: Вызов мастера -->
+        <section class="call-master">
+            <div class="wrapper">
+                <div class="call-master__desc-form">
+                    <div class="call-master__desc">
+                        <h2 class="call-master__title section__title">Вызов мастера</h2>
+                        <p class="call-master__smal-desc">Оставьте заявку сейчас и получите <span>скидку 15%</span></p>
+                    </div>
+                    <form action="#" class="call-master__form">
+                        <input type="number" name="phone" id="phone" placeholder="Номер телефона">
+                        <button class="send-form">Заказать звонок</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9-й Экран: Контакты -->
+        <section class="contacts wrapper">
+            <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A21ba988433f793fb6d2ddf5176956efc009540420e0c9d4a3b2ff91f500599ac&amp;source=constructor" width="600" height="450" frameborder="0"></iframe>
+            <div class="contacts__info">
+                <h2 class="contacts__title section__title">Контактная информация</h2>
+                <div class="contacts__address">
+                    <p class="address">ул. Стрелковая, д. 14 (офис 1)</p>
+                    <p class="work-hours">8:00—21:00 без выходных</p>
+                </div>
+                <div class="contacts__address">
+                    <p class="address">ул. Карла Маркса, д. 33 (диспетчерская)</p>
+                    <p class="work-hours">7:00—23:00 без выходных</p>
+                </div>
+                <a href="#" class="contacts__email">iavaisov@gmail.com</a>
+                <button class="contacts__btn-call">Позвонить</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 10-й Экран: Футер -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__logo-nav">
+                <div class="footer__logo logo">
+                    <img class="logo-btn__img" src="img/logo.png" alt="F">
+                    <span class="logo__name">Fixper</span>
+                </div>
+                <div class="footer__nav">
+                    <a href="#">Диагностика</a>
+                    <a href="#">Стоимость</a>
+                    <a href="#">Мастера</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Вопросы</a>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+            <p class="payment__way">Способы оплаты:</p>
+            <a href="#"><img src="img/mir.png" alt="Мир"></a>
+            <a href="#"><img src="img/mastercard.png" alt="Mastercard"></a>
+            <a href="#"><img src="img/visa.png" alt="Visa"></a>
+            <a href="#"><img src="img/apple-pay.png" alt="ApplePay"></a>
+            <a href="#"><img src="img/google-pay.png" alt="GooglePay"></a>
+            <p>Наличные</p>
+        </div>
+        <div class="footer__company wrapper">
+            <p>Сервис ремонта бытовой и цифровой техники</p>
+            <p>ЧПТУП «МИКАИЛ» 192007601</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/question-answer.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/problem-progress-bar.js"></script>
+    <!-- Фиксирование ширины viewport -->
+    <script type="text/javascript">
+        (function setViewPort() {
+            if (screen.width <= 780) {
+            document.getElementById("viewport").setAttribute("content", "width=780, initial-scale=1.0");
+            }
+            if (screen.width <= 420) {
+                document.getElementById("viewport").setAttribute("content", "width=420, initial-scale=1");
+            }
+        })();
+    </script>
+    <script>
+        $(".problem__btn").click(function(){
+            $(".problem-select").addClass("problem__display-none");
+            $(".problem-decision").addClass("problem__display-block");
+        });
+        $(".problem__btn-to-select").click(function(){
+            $(".problem-select").removeClass("problem__display-none");
+            $(".problem-decision").removeClass("problem__display-block");
+        });
+    </script>
+</body>
+</html>
