@@ -165,12 +165,12 @@ body {
 }
 
 .logo-btn__btn-call {
-    width: 162px;
-    height: 55px;
+    padding: 16px 38px;
     border-radius: 15px;
     border: #FFC464 solid 2px;
     background: none;
     color: #FFC464;
+    text-decoration: none;
     font-family: "TT Norms Bold", sans-serif;
 }
 
@@ -275,6 +275,7 @@ body {
     background: none;
     font-size: 16px;
     color: #FFC464;
+    text-decoration: none;
     font-family: "TT Norms Medium", sans-serif;
 }
 
@@ -1253,6 +1254,7 @@ body {
     border: 2px solid #993280;
     border-radius: 15px;
     background: none;
+    text-decoration: none;
     font-family: "TT Norms Bold", sans-serif;
 }
 
